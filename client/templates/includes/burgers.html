@@ -1,0 +1,23 @@
+
+<!--/////BURGERS//////-->
+<template name="burgPhot">
+    {{#each prod4}}
+    <span>
+        <img src="{{url}}" class="prod"/>
+            <span class="text_prod">{{bu}}</span>
+         <span>{{> compteur1}}   </span>
+        </span>
+    {{/each}}
+
+</template>
+
+<template name="burgers">
+    <label class="control-label" for="url">BURGERS</label>
+    <div class="controls">
+        <div class="produits">
+
+            <div>{{> burgPhot}}</div>
+        </div>
+    </div>
+    <hr>
+</template>

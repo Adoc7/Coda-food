@@ -1,0 +1,21 @@
+<!--/////PIZZAS//////-->
+<template name="pizzaPhot">
+    {{#each prod2}}
+    <span>
+        <img src="{{url}}" class="prod"/>
+            <span class="text_prod">{{pi}}</span>
+ <span>{{> compteur1}}   </span>
+        </span>
+    {{/each}}
+    <br>
+</template>
+
+<template name="pizzas">
+    <label class="control-label" for="url">PIZZAS</label>
+    <div class="controls">
+        <div class="produits">
+            <div>{{> pizzaPhot}}</div>
+        </div>
+    </div>
+    <hr>
+</template>

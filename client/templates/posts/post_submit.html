@@ -1,0 +1,51 @@
+<template name="postSubmit">
+    <form class="main form page">
+        <div class="form-group">
+                <!--////ERRORS-->
+                <!--<div class="form-group {{errorClass 'url'}}">-->
+            <div class="row row-centered">
+                <div class="col-xs-6 col-centered col-sm-9 col-centered col-md-12 col-centered col-xl-12 col-centered" >
+
+                    {{> drinks}}
+                    {{> pizzas}}
+                    {{> salades}}
+                    {{> burgers}}
+                    {{> desserts}}
+
+                </div>
+            </div>
+
+
+
+            <!--<input name="url" id="url" type="text" value="" placeholder="Votre URL" class="form-control"/>-->
+                </div>
+
+
+
+            <!--/////////////////////////////////////BURGERS-->
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+
+            <!--/////ERRORS-->
+            <!--<div class="form-group {{errorClass 'title'}}">-->
+
+            <label class="control-label" for="title">Title</label>
+            <div class="controls">
+                <input name="title" id="title" type="text" value="" placeholder="Nommez votre article" class="form-control"/>
+                <!--/////ERRORS-->
+                <!--<span class="help-block"></span>-->
+                <!--<span class="help-block">{{errorMessage 'title'}}</span>-->
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+</template>
+

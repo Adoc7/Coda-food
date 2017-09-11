@@ -1,0 +1,21 @@
+<!--/////SALADES//////-->
+<template name="saladPhot">
+    {{#each prod3}}
+    <span>
+        <img src="{{url}}" class="prod"/>
+            <span class="text_prod">{{sa}}</span>
+         <span>{{> compteur1}}   </span>
+    </span>
+    {{/each}}
+    <br>
+</template>
+
+<template name="salades">
+    <label class="control-label" for="url">SALADES</label>
+    <div class="controls">
+        <div class="produits">
+            <div>{{> saladPhot}}</div>
+        </div>
+    </div>
+    <hr>
+</template>

@@ -1,4 +1,214 @@
+html{
+    height:100%;
+}
 
+a:hover{
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    color:seagreen;
+}
+a{
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+
+    color:forestgreen;
+    }
+.bouton_commande{
+    padding:14px 15px 8px 15px;
+    text-align:center;
+    margin-left: 43%;
+    margin-right: auto;
+    width:60%;
+    border:2px solid white;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.bouton_commande:hover{
+background-color: white;
+}
+
+.deb{
+    /*float: right;*/
+    /*position: relative;*/
+    margin-top:10px;
+    margin-left:-70px;
+    /*border: 1px solid red ;*/
+    /*background-color: #2e6da4;*/
+    height:740px;
+}
+
+.deb1{
+    /*float: right;*/
+
+    position: absolute;
+    margin-top:10px;
+    width:98%;
+    margin-left:10px;
+    /*border: 1px solid red ;*/
+    background-color: rgba(255,255,255,0.4);
+    height:300px;
+}
+
+.conteneur_home{
+    width:100%;
+    height:580px;
+    background-color: rgba(10,70,100,0.5);
+}
+
+.TitreHome{
+    text-align:center;
+    font-size:50px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.prodHome{
+    margin-left:33%;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width:380px;
+    height:auto;
+}
+
+.conteneur_prodPi, .conteneur_prodSa, .conteneur_prodBu, .conteneur_prodDeBo {
+    position: relative;
+    float: right;
+
+    display: inline-block;
+    /*margin:auto;*/
+    /*margin-top:40px;*/
+    margin-right: 0.7%;
+    width:180px;
+    border: 1px solid rgba(255,255,255,0.5) ;
+
+
+    background-color: rgba(25,7,5,0.6);
+}
+
+.conteneur_prodPi{
+    height:480px;
+}
+.conteneur_prodSa{
+   height:560px;
+   }
+.conteneur_prodBu{
+    height:560px;
+}
+.conteneur_prodDeBo{
+    height:400px;
+}
+.label{
+    padding-right:60px;
+
+}
+.control-label{
+
+    /*padding-left:1vw;*/
+    /*padding-right:60px;*/
+    margin-top:90px;
+
+    font-size:8vw;
+    /*oveflow:hidden;*/
+    transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg); /* IE 9 */
+    -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+
+    /*border: 2px solid rgba(255,255,150,0.5);*/
+
+    margin-left:8%;
+    /*background-color: rgba(30,70,80,0.8);*/
+    color:rgba(255,255,150,0.6)
+}
+
+.prod{
+    margin-left:5%;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:160px;
+    height:auto;
+}
+
+
+
+
+
+
+.ingredPi, .ingredSa, .ingredBu, .ingredDeBo, .pizza, .prix{
+    position: relative;
+    margin-left:14px;
+    width:150px;
+}
+.ingredPi, .ingredSa, .ingredBu, .ingredDeBo{
+    padding: 10px;
+    font-size:10px;
+    color:black;
+    background-color:whitesmoke ;
+}
+.ingredPi{
+    height:100px;
+}
+.ingredSa{
+    height:200px;
+}
+
+.ingredbu{
+    height:250px;
+}
+
+.ingredDeBo{
+      height:1px;
+  }
+
+.pizza{
+    /*width:150px;*/
+    font-size:16px;
+    background-color: black;
+    padding: 12px;
+}
+
+.prix{
+    font-size:14px;
+    padding: 8px;
+    background-color: black;
+}
+
+.text1, .text2{
+    /*margin-top:10px;*/
+    /*margin-bottom:10px;*/
+    border:none;
+    background:rgba(200,0,0,1);
+}
+
+.text1{
+    z-index:150;
+    margin-left:34px;
+    height:40px;
+    width:110px;
+    padding-left:10px;
+    border-radius:5px;
+    font-weight: 900;
+    font-size:14px;
+    color:white;
+    background:rgba(200,0,0,1);
+}
+
+.text2{
+    z-index: 100;
+    height:30px;
+    margin-top: 10px;
+    margin-left:-65px;
+    padding: 0px 8px 0px 0px;
+    width:50px;
+    border-radius:40px;
+    vertical-align: baseline;
+    text-align: right;
+    font-weight: 900;
+    font-size:20px;
+    color:greenyellow;
+}
 
 .text{
     background-color: transparent;
@@ -13,11 +223,9 @@
 
 /* centered columns styles */
 .row-centered {
-
     text-align:center;
 }
 .col-centered {
-
     display:inline-block;
     float:none;
     /* reset the text-align */
@@ -27,25 +235,22 @@
 }
 
 
-
 #logo{
-    /*position:absolute;*/
-    z-index:1000;
+    position:relative;
+    z-index:700;
     margin-top:5%;
-    width: 15%;
+    width: 20%;
     height:auto;
     /*color:white;*/
-
 }
-
 #logo2{
-    /*position:absolute;*/
-    z-index:1000;
-    width:30%;
-    height: 30%;
-    margin-left: 15%;
+    position:absolute;
+    z-index:700;
+    width:35%;
+    height: auto;
+    top:3%;
+    margin-left: 30%;
     margin-right:auto;
-
     filter: invert(1);
     -webkit-filter: invert(1);
     -moz-filter: invert(1);
@@ -62,16 +267,6 @@
 
     /*margin-left: 6%;*/
     /*margin-right:auto;*/
-}
-.prod{
-    /*width:15%;*/
-    margin-left:1%;
-    margin-top: 30px;
-    margin-bottom: 100px;
-
-    width:160px;
-    height:auto;
-    /*transform: rotate3d(0,1,0,60deg);*/
 }
 
 .cont_text_prod{
@@ -103,57 +298,23 @@
 }
 
 .text_prod1{
-    margin-left:-8%;
-    margin-right:-8%;
+    /*margin-left:-8%;*/
+    /*margin-right:-8%;*/
 
 
 }
 
 
-.text1{
 
-    position: absolute;
-    z-index:150;
-    margin-left:-5%;
-    margin-top:210px;
-    width:50px;
-    height:40px;
-    border-radius:5px;
-    padding-left:10px;
-    /*border: solid white 1px;*/
-    /*text-align: left;*/
-    font-weight: 900;
-   border:none;
-    background:rgba(200,0,0,1);
-    /*background:transparent;*/
-    font-size:14px;
-    color:white;
+.fond-translucide1{
+    background: rgba(40, 80, 40,0.7);
 }
-
-.text2{
-    z-index: 100;
-    position: absolute;
-    margin-left:-2%;
-    margin-top:210px;
-    width:80px;
-    height:40px;
-    border-radius:40px;
-    /*border: solid white 1px;*/
-    text-align: right;
-    font-weight: 900;
-    padding: 0px 15px 0px 0px;
-    border:none;
-    /*background:transparent;*/
-    background:rgba(200,0,0,1);
-
-
-    font-size:20px;
-    color:greenyellow;
+.fond-translucide2{
+    background: rgba(80, 40, 40,0.7);
 }
-
 
 .grid-block, .main, .post, .comments li, .comment-form {
-    background: rgba(40, 80, 40,0.7);
+    /*background: rgba(40, 80, 40,0.7);*/
     /*background: #3c763d;*/
     border-radius: 3px;
     padding: 10px;
@@ -163,15 +324,18 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
 body {
-    background: #3c763d;
+    /*background: #3c763d;*/
     /*background-image: url("https://www.ecobati.be/documents/photo/gillaizeau/gillaizeau-brique-patrimoine-1-850px.jpg");*/
-    font-size:2.5em;
-
+    /*font-size:2.5em;*/
+    /*-webkit-filter: grayscale(100%); !* Pour les navigateurs Chrome, Safari, Opera *!*/
+    /*filter: grayscale(100%); !* Firefox *!*/
 
     background-image: url("bg.jpg");
+
     background-repeat: repeat;
     background-position: left top;
     background-attachment: fixed;
+    height:100%;
     /*filter:blur(5px);*/
 
 
@@ -278,8 +442,18 @@ body {
 .comments li p:last-child {
     margin-bottom: 0; }
 
+.dropdown-menu  {
+    width:300px;
+    /*display: block;*/
+    /*padding: 3px 20px;*/
+    /*clear: both;*/
+    /*line-height: 20px;*/
+    /*color: #bbb;*/
+    /*white-space: nowrap; */
+}
+
 .dropdown-menu span {
-    display: block;
+    /*display: block;*/
     padding: 3px 20px;
     clear: both;
     line-height: 20px;

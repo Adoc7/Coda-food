@@ -1,32 +1,33 @@
 <!--/////BOISSONS//////-->
-<template name="drinkPhot">
 
-    {{#each prod1}}
-    <!--<span> {{> compteur2}}</span>-->
-    <span>
-        <img src="{{url}}" class="prod"/>
-            <span class="text_prod">{{bo}}</span>
+<template name="BoissonsList">
+    <div class="deb">
+        {{#each boissons}}
+        <div class="conteneur_prodDeBo">
+
+            <img src="{{image}}" class="prod"/>
+            <div class="pizza" >
+                <!--<br>-->
+
+                <b>{{name}}</b></div>
+            <div class="ingredDeBo"></div>
+            <div class="prix" >
+                Prix : {{price}} euros</div>
             <span>{{> compteur1}}   </span>
-</span>
-    {{/each}}
+        </div>
+        <br>
+        {{/each}}
+    </div>
 
-
-
-
-    <!--<span> {{> compteur2}}</span>-->
 </template>
 
-<template name="drinks">
- <label class="control-label" for="url">BOISSONS</label>
-    <div class="controls">
-        <div class="produits">
-    <div>{{> drinkPhot}} </div>
-
-
-
-        </div>
+<template name="boissons">
+    <label class="control-label" for="url">BOISSONS</label>
+    <div class="produits">
+        {{> BoissonsList}}
     </div>
-<hr>
+
+    <hr>
 </template>
 
 

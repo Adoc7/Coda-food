@@ -1,23 +1,53 @@
+<!--/////PIZZAS//////-->
 
-<!--/////BURGERS//////-->
-<template name="burgPhot">
-    {{#each prod4}}
-    <span>
-        <img src="{{url}}" class="prod"/>
-            <span class="text_prod">{{bu}}</span>
-         <span>{{> compteur1}}   </span>
-        </span>
-    {{/each}}
+<template name="BurgersList">
+    <div class="deb">
+        {{#each burgers}}
+        <div class="conteneur_prodBu">
+
+            <img src="{{image}}" class="prod"/>
+            <div class="pizza" >
+                <!--<br>-->
+
+                <b>{{name}}</b></div>
+            <div class="ingredBu"> Présentation :  {{description}}</div>
+            <div class="prix" >
+                Prix : {{price}} euros</div>
+            <span>{{> compteur1}}   </span>
+        </div>
+        <br>
+        {{/each}}
+    </div>
 
 </template>
 
 <template name="burgers">
     <label class="control-label" for="url">BURGERS</label>
-    <div class="controls">
-        <div class="produits">
-
-            <div>{{> burgPhot}}</div>
-        </div>
+    <div class="produits">
+        {{> BurgersList}}
     </div>
+
     <hr>
 </template>
+<!--/////BURGERS//////-->
+<!--<template name="burgPhot">-->
+    <!--{{#each prod4}}-->
+    <!--<span>-->
+        <!--<img src="{{url}}" class="prod"/>-->
+            <!--<span class="text_prod">{{bu}}</span>-->
+         <!--<span>{{> compteur1}}   </span>-->
+        <!--</span>-->
+    <!--{{/each}}-->
+
+<!--</template>-->
+
+<!--<template name="burgers">-->
+    <!--<label class="control-label" for="url">BURGERS</label>-->
+    <!--<div class="controls">-->
+        <!--<div class="produits">-->
+
+            <!--<div>{{> burgPhot}}</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<hr>-->
+<!--</template>-->

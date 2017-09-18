@@ -1,24 +1,50 @@
 <template name="postSubmit">
-    <form class="main form page">
-        <div class="form-group">
-                <!--////ERRORS-->
-                <!--<div class="form-group {{errorClass 'url'}}">-->
-            <div class="row row-centered">
-                <div class="col-xs-6 col-centered col-sm-9 col-centered col-md-12 col-centered col-xl-12 col-centered" >
+    <form class="main form page fond-translucide1">
 
-                    {{> drinks}}
+        <!--<form class="  fond-translucide2">-->
+
+            <div class="row row-centered">
+                <div class="col-xs-9 col-centered col-sm-12 col-centered col-md-12 col-centered col-xl-12 col-centered" >
+                    {{> boissons}}
+                    {{> burgers}}
                     {{> pizzas}}
                     {{> salades}}
-                    {{> burgers}}
                     {{> desserts}}
-
                 </div>
             </div>
 
+            <div class="posts">
+                {{#each posts}}
+                {{> postItem}}
+                {{/each}}
+            </div>
+        <!--</form>-->
 
 
-            <!--<input name="url" id="url" type="text" value="" placeholder="Votre URL" class="form-control"/>-->
-                </div>
+
+        <!--<div class="form-group">-->
+                <!--&lt;!&ndash;////ERRORS&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group {{errorClass 'url'}}">&ndash;&gt;-->
+            <!--<div class="row row-centered">-->
+                <!--<div class="col-xs-6 col-centered col-sm-9 col-centered col-md-12 col-centered col-xl-12 col-centered" >-->
+
+                    <!--{{> boissons}}-->
+
+                    <!--{{> burgers}}-->
+
+                    <!--{{> pizzas}}-->
+
+                    <!--{{> salades}}-->
+                    <!--{{> desserts}}-->
+
+
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+            <input name="url" id="url" type="text" value="" placeholder="Votre URL" class="form-control"/>
+                <!--</div>-->
 
 
 

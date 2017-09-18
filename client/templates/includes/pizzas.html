@@ -1,21 +1,30 @@
 <!--/////PIZZAS//////-->
-<template name="pizzaPhot">
-    {{#each prod2}}
-    <span>
-        <img src="{{url}}" class="prod"/>
-            <span class="text_prod">{{pi}}</span>
- <span>{{> compteur1}}   </span>
-        </span>
-    {{/each}}
+
+<template name="PizzasList">
+    <div class="deb">
+    {{#each pizzas}}
+    <div class="conteneur_prodPi">
+
+    <img src="{{image}}" class="prod"/>
+        <div class="pizza" >
+    <!--<br>-->
+    <b>{{name}}</b> </div>
+        <div class="ingredPi"> Ingrédients :  {{description}}</div>
+        <div class="prix" >
+       Prix : {{price}} euros</div>
+        <span>{{> compteur1}}   </span>
+    </div>
     <br>
+    {{/each}}
+    </div>
+
 </template>
 
 <template name="pizzas">
     <label class="control-label" for="url">PIZZAS</label>
-    <div class="controls">
         <div class="produits">
-            <div>{{> pizzaPhot}}</div>
+            {{> PizzasList}}
         </div>
-    </div>
+
     <hr>
 </template>

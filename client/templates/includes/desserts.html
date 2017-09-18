@@ -1,21 +1,31 @@
 <!--/////DESSERTS//////-->
-<template name="dessertPhot">
-    {{#each prod5}}
-    <span>
-        <img src="{{url}}" class="prod"/>
-            <span class="text_prod">{{de}}</span>
-         <span>{{> compteur1}}   </span>
-        </span>
-    {{/each}}
-    <br>
+
+<template name="DessertsList">
+    <div class="deb">
+        {{#each desserts}}
+        <div class="conteneur_prodDeBo">
+
+            <img src="{{image}}" class="prod"/>
+            <div class="pizza" >
+                <!--<br>-->
+
+                <b>{{name}}</b></div>
+            <div class="ingredDeBo"></div>
+            <div class="prix" >
+                Prix : {{price}} euros</div>
+            <span>{{> compteur1}}   </span>
+        </div>
+        <br>
+        {{/each}}
+    </div>
+
 </template>
 
 <template name="desserts">
     <label class="control-label" for="url">DESSERTS</label>
-    <div class="controls">
-        <div class="produits">
-            <div>{{> dessertPhot}}</div>
-        </div>
+    <div class="produits">
+        {{> DessertsList}}
     </div>
+
     <hr>
 </template>

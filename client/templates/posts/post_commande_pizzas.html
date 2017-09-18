@@ -1,0 +1,28 @@
+<template name="postComPizz">
+    <form class="main form page fond-translucide1">
+
+        <!--<form class="  fond-translucide2">-->
+
+        <div class="row row-centered">
+            <div class="col-xs-9 col-centered col-sm-12 col-centered col-md-12 col-centered col-xl-12 col-centered" >
+                {{> boissons}}
+                {{> burgers}}
+                {{> pizzas}}
+                {{> salades}}
+                {{> desserts}}
+            </div>
+        </div>
+
+        <div class="posts">
+            {{#each posts}}
+            {{> postItem}}
+            {{/each}}
+        </div>
+        <!--</form>-->
+
+
+
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+</template>
+
